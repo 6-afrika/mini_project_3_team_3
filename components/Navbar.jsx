@@ -24,17 +24,17 @@ const Navbar = () => {
                     Weather Daily
                 </div>
                 <div>
-                    <ul className='mr-20 hidden md:flex text-white'>
+                    <ul className='mr-20 hidden md:flex text-white cursor-pointer'>
                         <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b  hover:text-gray-400'>Home</li>
+                            <li className='ml-10 text-sm uppercase hover:text-gray-400'>Home</li>
                         </Link>
                         <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b  hover:text-gray-400'>City Weather</li>
+                            <li className='ml-10 text-sm uppercase hover:text-gray-400'>City Weather</li>
                         </Link>
                         <Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b  hover:text-gray-400'>Hourly Weather</li>
+                            <li className='ml-10 text-sm uppercase hover:text-gray-400'>Hourly Weather</li>
                         </Link><Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:border-b  hover:text-gray-400'>About</li>
+                            <li className='ml-10 text-sm uppercase hover:text-gray-400'>About</li>
                         </Link>
                     </ul>
                     <div onClick={handleToggle} className='md:hidden'>
