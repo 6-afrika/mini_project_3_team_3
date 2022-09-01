@@ -60,7 +60,7 @@ const Features = () => {
                 </div>
             </div>
 
-            <div className="container mb-25 mt-5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 max-w-screen-lg ">
+            <div className="container mb-25 mt-5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 max-w-screen-lg justify-center items-center">
 
                 <div className="flex flex-col ml-5 mt-4 rounded-md shadow-md bg-white lg:mb-16">
                     <div className="p-6 flex flex-col">
@@ -75,15 +75,15 @@ const Features = () => {
 
                 <div className="flex flex-col ml-5 mt-4 rounded-md shadow-md bg-white lg:mb-16">
                     <div className="p-6 flex flex-col">
-                        <div className=' flex items-center justify-center shadow-md relative w-16 h-16  bg-white rounded-full'>
 
-                            {imgURL && (
-                                <div>
-                                    <Image src={imgURL} width={50} height={50} alt="Generated Avatar" />
-                                </div>
-                            )}
 
-                        </div>
+                        {imgURL && (
+                            <div className=' flex items-center justify-center shadow-md relative w-16 h-16  bg-white rounded-full'>
+                                <Image src={imgURL} width={50} height={50} alt="Generated Avatar" />
+                            </div>
+                        )}
+
+
 
 
                     </div>
