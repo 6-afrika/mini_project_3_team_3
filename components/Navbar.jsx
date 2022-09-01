@@ -46,7 +46,8 @@ const Navbar = () => {
                         </Link>
                         <Link href='/#chart'>
                             <li className='ml-10 text-sm uppercase hover:text-gray-400'>Hourly Weather</li>
-                        </Link><Link href='/#footer'>
+                        </Link>
+                        <Link href='/#footer'>
                             <li className='ml-10 text-sm uppercase hover:text-gray-400'>Contact</li>
                         </Link>
                     </ul>
@@ -72,36 +73,36 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className='ml-[20px] py-4 flex flex-col'>
-                        <ul className='uppercase'>
+                        <ul className='uppercase cursor-pointer'>
                             <Link href="/">
-                                <li className='py-4 text-sm hover:text-gray-400'>Home</li>
+                                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-gray-400'>Home</li>
                             </Link>
-                            <Link href="/">
-                                <li className='py-4 text-sm hover:text-gray-400'>City Weather</li>
+                            <Link href="/#features">
+                                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-gray-400'>City Weather</li>
                             </Link>
-                            <Link href="/">
-                                <li className='py-4 text-sm hover:text-gray-400'>Hourly Weather</li>
+                            <Link href="/#chart">
+                                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-gray-400'>Hourly Weather</li>
                             </Link>
-                            <Link href="/">
-                                <li className='py-4 text-sm hover:text-gray-400'>About</li>
+                            <Link href="/#footer">
+                                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-gray-400'>About</li>
                             </Link>
                         </ul>
                         <div className='pt-40'>
                             <p className='uppercase tracking-widest'>Contact Us</p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <FaLinkedinIn />
 
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <FaGithub />
 
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <AiOutlineMail />
 
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover: scale-105 ease-in duration-300'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <BsFillPersonLinesFill />
 
                                 </div>
