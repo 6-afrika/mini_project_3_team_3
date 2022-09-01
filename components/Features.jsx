@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
+import MainImage from '../public/assets/MainImage.png'
 import Image from 'next/image'
+
 
 const Features = () => {
     const filters = ["adventurer", "croodles", "female", "human", "identicon", "big-smile", "bottts", "avataaars", "jdenticon", "gridy", "micah"]
@@ -60,32 +62,31 @@ const Features = () => {
                 </div>
             </div>
 
-            <div className="container mb-25 mt-5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 max-w-screen-lg justify-center items-center">
+            <div className=" my-4  ">
 
-                <div className="flex flex-col ml-5 mt-4 rounded-md shadow-md bg-white lg:mb-16">
-                    <h3 className="mt-5 mb-2 text-[16px] font-semibold">Weather card</h3>
-                    <p className="mb-5 text-gray-400 font-light text-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <  div className="flex items-center py-4">
+                            {/* <!-- The left line --> */}
+                  <div className="flex-grow h-px bg-gray-400"></div> 
+                   <div/>
 
-                </div>
+                    <div className=" flex justify-center gap-8 w-full mt-6">
+                     {/* <!-- Product Tile Start --> */}
+                          <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
+                   
+                             <img src={MainImage} alt="an image that shows the weather"></img>
+                      
+    
+                     </div>
+                        {/* <!-- Product Tile End -->
 
-
-                <div className="flex flex-col ml-5 mt-4 rounded-md shadow-md bg-white lg:mb-16">
-                    <div className="p-6 flex flex-col">
-
-
-                        {imgURL && (
-                            <div className=' flex items-center justify-center shadow-md relative w-16 h-16  bg-white rounded-full'>
-                                <Image src={imgURL} width={50} height={50} alt="Generated Avatar" />
+                           <!-- Product Tile Start --> */}
+                         <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
+                   <div className="block h-64 rounded-lg shadow-lg hover:bg-gray-100 bg-white">
+                       <img src={MainImage} alt="displays avatar"></img>
+              </div>
+    
+                       </div>
                             </div>
-                        )}
-
-
-
-
-                    </div>
-                    <h3 className="mt-5 mb-2 text-[16px] font-semibold">City name</h3>
-                    <p className="mb-5 text-gray-400 font-light text-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-
                 </div>
 
             </div>
