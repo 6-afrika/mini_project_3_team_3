@@ -1,6 +1,7 @@
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar'
 import '../styles/globals.css'
+import Chart from '../components/Chart';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -8,6 +9,7 @@ function MyApp({ Component, pageProps }) {
       <Navbar />
       <Hero />
       <Component {...pageProps} />
+      <Chart />
 
     </>
   );
