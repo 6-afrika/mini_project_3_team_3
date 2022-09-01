@@ -11,9 +11,10 @@ function MyApp({ Component, pageProps }) {
       <Navbar />
       <Hero />
       <Features />
+      <Chart />
       <Footer />
       <Component {...pageProps} />
-      <Chart />
+     
 
     </>
   );
