@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Hero = () => {
     return (
-        <section class="relative mt-40 ml-30 md:ml-20  sm:ml-0">
+        <section id="hero" class="relative mt-40 ml-30 md:ml-20  sm:ml-0">
             <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
                 <div class="flex flex-1 flex-col items-center lg:items-start">
                     <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">

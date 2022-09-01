@@ -29,7 +29,7 @@ const Features = () => {
     };
 
     return (
-        <section className="  py-20 mt-15 h-screen w-screen">
+        <section id="features" className="  py-20 mt-15 h-screen w-screen">
 
             <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
                 <h1 className="text-3xl text-center text-black">Features</h1>
@@ -63,10 +63,6 @@ const Features = () => {
             <div className="container mb-25 mt-5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 max-w-screen-lg justify-center items-center">
 
                 <div className="flex flex-col ml-5 mt-4 rounded-md shadow-md bg-white lg:mb-16">
-                    <div className="p-6 flex flex-col">
-
-
-                    </div>
                     <h3 className="mt-5 mb-2 text-[16px] font-semibold">Weather card</h3>
                     <p className="mb-5 text-gray-400 font-light text-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
 
@@ -87,7 +83,7 @@ const Features = () => {
 
 
                     </div>
-                    <h3 className="mt-5 mb-2 text-[16px] font-semibold">Business Consulting</h3>
+                    <h3 className="mt-5 mb-2 text-[16px] font-semibold">City name</h3>
                     <p className="mb-5 text-gray-400 font-light text-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
 
                 </div>

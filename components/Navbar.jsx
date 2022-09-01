@@ -5,15 +5,28 @@ import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai"
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useState } from 'react'
+import { useEffect } from 'react'
 
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
+    const [shadow, setShadow] = useState(false)
+
+    useEffect(() => {
+        const handleShadow = () => {
+            if (window.scrollY >= 90) {
+                setShadow(true)
+            } else {
+                setShadow(false)
+            }
+        }
+        window.addEventListener('scroll', handleShadow)
+    }, [])
     const handleToggle = () => {
         setNav(prevValue => !prevValue)
     }
     return (
-        <nav className='fixed w-full top-0 left-0  shadow-xl  z-[100] bg-[#395CB0]'>
+        <nav className={shadow ? 'fixed w-full top-0 left-0  shadow-xl  z-[100] bg-[#395CB0]' : 'fixed w-full top-0 left-0 z-[100] bg-[#395CB0]'}>
             <div className='flex justify-between items-center w-full h-full  px-2 2xl:px-16'>
                 <div className='font-bold ml-10 text-2xl gap-3 cursor-pointer flex items-center font-sans 
         text-white'>
@@ -28,7 +41,7 @@ const Navbar = () => {
                         <Link href='/'>
                             <li className='ml-10 text-sm uppercase hover:text-gray-400'>Home</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#features'>
                             <li className='ml-10 text-sm uppercase hover:text-gray-400'>City Weather</li>
                         </Link>
                         <Link href='/'>
