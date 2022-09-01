@@ -14,7 +14,7 @@ const Footer = () => {
         { name: "logo-instagram", link: "#" },
     ];
     return (
-        <footer className='bg-[#395CB0] text-white h-60'>
+        <footer id="footer" className='bg-[#395CB0] text-white h-60'>
             <div
                 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
       text-center pt-2 text-gray-400 text-sm pb-8 mt-[100px]"

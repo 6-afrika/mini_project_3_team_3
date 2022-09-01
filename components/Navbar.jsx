@@ -44,10 +44,10 @@ const Navbar = () => {
                         <Link href='/#features'>
                             <li className='ml-10 text-sm uppercase hover:text-gray-400'>City Weather</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#chart'>
                             <li className='ml-10 text-sm uppercase hover:text-gray-400'>Hourly Weather</li>
-                        </Link><Link href='/'>
-                            <li className='ml-10 text-sm uppercase hover:text-gray-400'>About</li>
+                        </Link><Link href='/#footer'>
+                            <li className='ml-10 text-sm uppercase hover:text-gray-400'>Contact</li>
                         </Link>
                     </ul>
                     <div onClick={handleToggle} className='md:hidden'>
