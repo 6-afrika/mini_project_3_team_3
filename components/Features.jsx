@@ -39,26 +39,28 @@ const Features = () => {
             </div>
 
 
-            <div className='flex'>
+            <div className='flex justify-between mr-20'>
                 <div>
                     <input
-                        className="form-control"
+                        className="ml-20"
                         value={seed}
                         onChange={handleInputChange}
                         placeholder="Enter your city here"
                     />
                 </div>
-                <h6 className="font-semibold">Select a sprite here:  </h6>
-                <select onChange={handleFilterChange} >
-                    {filters.map((value, index) => (
-                        <option value={value} key={index}>
-                            {value}
-                        </option>
-                    ))}
-                </select>
+                <div className='flex gap-2'>
+                    <h6 className="font-semibold">Select a sprite here:  </h6>
+                    <select onChange={handleFilterChange} >
+                        {filters.map((value, index) => (
+                            <option value={value} key={index}>
+                                {value}
+                            </option>
+                        ))}
+                    </select>
+                </div>
             </div>
 
-            <div className="container mb-25 mt-5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg ">
+            <div className="container mb-25 mt-5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 max-w-screen-lg ">
 
                 <div className="flex flex-col ml-5 mt-4 rounded-md shadow-md bg-white lg:mb-16">
                     <div className="p-6 flex flex-col">
