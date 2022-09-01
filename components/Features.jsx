@@ -58,14 +58,14 @@ const Features = () => {
                 </select>
             </div>
 
-            <div className="container shadow-md rounded-md mb-25 mt-5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg ">
+            <div className="container mb-25 mt-5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-screen-lg ">
 
                 <div className="flex flex-col ml-5 mt-4 rounded-md shadow-md bg-white lg:mb-16">
                     <div className="p-6 flex flex-col">
 
 
                     </div>
-                    <h3 className="mt-5 mb-2 text-[16px] font-semibold">Business Consulting</h3>
+                    <h3 className="mt-5 mb-2 text-[16px] font-semibold">Weather card</h3>
                     <p className="mb-5 text-gray-400 font-light text-[15px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
 
                 </div>

@@ -10,7 +10,7 @@ const Hero = () => {
                     <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
                         A Simple Weather Application
                     </h2>
-                    <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6">
+                    <p class="text-gray-700 text-lg text-center lg:text-left mb-6">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc imperdiet nisl eu justo bibendum fringilla maximus luctus magna. Praesent urna dolor, dapibus ut blandit pellentesque, fringilla lobortis nulla. Ut bibendum turpis ac est condimentum auctor. Mauris eu sapien quis lorem tristique luctus. Integer quis nibh cursus, consectetur magna placerat, pulvinar sem. Morbi semper feugiat tempor. Vestibulum vitae turpis lacinia, euismod est in, blandit lacus. Mauris sed est in lectus ultrices vestibulum.
 
                     </p>
