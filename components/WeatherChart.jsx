@@ -12,7 +12,7 @@ const WeatherChart = () => {
     const dates = [];
 
     const weatherData = await axios
-      .get(`http://localhost:7000/weather-forecast`, {
+      .get(`http:// ec2-13-57-225-181.us-west-1.compute.amazonaws.com/weather-forecast`, {
         params: { city_name: cityName },
       })
       .then((res) => res.data)
