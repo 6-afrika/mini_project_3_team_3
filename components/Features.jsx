@@ -41,7 +41,7 @@ const Features = () => {
             </div>
 
 
-            <div className='flex justify-between mr-20'>
+            <div className='flex justify-center items-center gap-40 mr-20 mt-10'>
                 <div>
                     <input
                         className="ml-20"
@@ -62,36 +62,35 @@ const Features = () => {
                 </div>
             </div>
 
-            <div className=" my-2  ">
+          
 
-                <  div className="flex items-center py-4">
-                            {/* <!-- The left line --> */}
-                  <div className="flex-grow h-px bg-gray-400"></div> 
-                   <div/>
+                   <div className=" my-4  ">
 
-                    <div className=" flex justify-center gap-20 w-full mt-6">
-                     {/* <!-- Product Tile Start --> */}
-                          <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
+                         <div className="flex items-center py-4">
+                           {/* <!-- The left line --> */}
+                           
+                          </div>
+
+                  <div className=" flex justify-center gap-8 w-full mt-6">
+                    {/* <!-- Product Tile Start --> */}
+                    <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
                    
-                             <Image src={MainImage} alt="an image that shows the weather"></Image>
-                      
-    
-                     </div>
-                        {/* <!-- Product Tile End -->
+                   <Image src={MainImage} alt="an image that shows the weather"></Image>
+            
 
-                           <!-- Product Tile Start --> */}
-                         <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
-                   <div className="block h-64 rounded-lg shadow-lg hover:bg-gray-100 bg-white">
-                       <Image src={MainImage} alt="displays avatar"></Image>
-              </div>
-    
-                       </div>
+           </div>
+
+              <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
+                            {imgURL && (<div className="flex h-64 rounded-lg shadow-lg hover:bg-gray-100 bg-white">
+                                <Image src={imgURL} width={50} height={50} alt="Generated Avatar" />
+
                             </div>
-                </div>
+                            )}
 
-            </div>
-
-        </section >
+                        </div>
+        </div>
+</div>
+        </section > 
     )
 }
 
