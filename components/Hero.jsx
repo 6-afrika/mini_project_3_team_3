@@ -1,5 +1,5 @@
 import React from 'react'
-import MainImage from '../public/assets/MainImage.png'
+import MainImage from '../public/assets/main-image.png'
 import Image from 'next/image'
 
 const Hero = () => {
@@ -18,8 +18,8 @@ const Hero = () => {
                     </p>
 
                 </div>
-                <div className="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 mr-[-60px]">
-                    <Image src={MainImage} width={400} height={400} alt="" />
+                <div className="flex justify-center rounded-md flex-1 mb-10 md:mb-16 lg:mb-0 mr-[-60px]">
+                    <Image className="" src={MainImage} width={400} height={400} alt="" />
                 </div>
             </div>
 
