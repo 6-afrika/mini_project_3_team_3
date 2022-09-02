@@ -13,19 +13,19 @@ const Features = () => {
     const [seed, setSeed] = useState("");
     const url = `http://localhost:7000/current-weather/?city_name=${seed}`
 
-    const [weather, setWeather] = useState({})
+    const [weather, setWeather] = useState()
 
     const handleInputChange = (event) => {
         setSeed(() => {
             if (event.key === "Enter") {
                 if (event.target.value.length >= 0) {
                     setImgURL(`https://avatars.dicebear.com/api/${filter}/${event.target.value}.svg`)
-                    fetch(url).then(res => res.json).then(result => {
-                        setWeather(result)
-                        setSeed('')
-                        console.log(result)
-                    })
+                    axios.get(url).then((response) => {
+                        setWeather(response.data)
+                        console.log(response.data)
 
+                    })
+                    setSeed('')
                 }
 
 
