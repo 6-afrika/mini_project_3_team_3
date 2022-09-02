@@ -21,6 +21,7 @@ const Features = ({ setCityName, cityName, setWeatherChart, weatherChart }) => {
   ];
   const [filter, setFilter] = useState(filters[0]);
   const [imgURL, setImgURL] = useState("");
+  const [cityData, setCityData] = useState();
 
   useEffect(() => {
     console.log(`Filter Set: ${filter}`);
@@ -39,6 +40,14 @@ const Features = ({ setCityName, cityName, setWeatherChart, weatherChart }) => {
       })
       .then((res) => res.data)
       .catch((err) => console.log(err.message));
+
+    await axios
+      .get(`http://localhost:7000/city-details`, {
+        params: { city_name: cityName },
+      })
+      .then((res) => setCityData(res.data))
+      .catch((err) => console.log(err.message));
+
     weatherData.forEach((data) => {
       temps.push(data.Temperature);
       dates.push(
@@ -100,7 +109,7 @@ const Features = ({ setCityName, cityName, setWeatherChart, weatherChart }) => {
               <p>{data.temp}</p>
             </div>
 
-            <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
+            <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white items-center justify-center">
               {imgURL && (
                 <div className="flex items-center justify-center shadow-sm relative w-16 h-16  bg-white rounded-full">
                   <Image
@@ -111,6 +120,7 @@ const Features = ({ setCityName, cityName, setWeatherChart, weatherChart }) => {
                   />
                 </div>
               )}
+              <h3>{cityName}</h3>
             </div>
           </div>
         </div>
