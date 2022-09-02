@@ -35,14 +35,14 @@ const Features = ({ setCityName, cityName, setWeatherChart, weatherChart }) => {
     const dates = [];
 
     const weatherData = await axios
-      .get(`http:// ec2-13-57-225-181.us-west-1.compute.amazonaws.com/weather-forecast`, {
+      .get(`http://ec2-13-57-225-181.us-west-1.compute.amazonaws.com/weather-forecast`, {
         params: { city_name: cityName },
       })
       .then((res) => res.data)
       .catch((err) => console.log(err.message));
 
     await axios
-      .get(`http://localhost:7000/city-details`, {
+      .get(`http:///ec2-13-57-225-181.us-west-1.compute.amazonaws.com/city-details`, {
         params: { city_name: cityName },
       })
       .then((res) => setCityData(res.data))
