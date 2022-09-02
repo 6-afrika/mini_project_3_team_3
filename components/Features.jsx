@@ -31,7 +31,7 @@ const Features = () => {
     };
 
     return (
-        <section id="features" className="  py-20 mt-15 h-screen w-screen">
+        <section id="features" className="  py-20 mt-15  w-screen">
 
             <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
                 <h1 className="text-3xl text-center text-black">Features</h1>
@@ -62,18 +62,18 @@ const Features = () => {
                 </div>
             </div>
 
-            <div className=" my-4  ">
+            <div className=" my-2  ">
 
                 <  div className="flex items-center py-4">
                             {/* <!-- The left line --> */}
                   <div className="flex-grow h-px bg-gray-400"></div> 
                    <div/>
 
-                    <div className=" flex justify-center gap-8 w-full mt-6">
+                    <div className=" flex justify-center gap-20 w-full mt-6">
                      {/* <!-- Product Tile Start --> */}
                           <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
                    
-                             <img src={MainImage} alt="an image that shows the weather"></img>
+                             <Image src={MainImage} alt="an image that shows the weather"></Image>
                       
     
                      </div>
@@ -82,7 +82,7 @@ const Features = () => {
                            <!-- Product Tile Start --> */}
                          <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
                    <div className="block h-64 rounded-lg shadow-lg hover:bg-gray-100 bg-white">
-                       <img src={MainImage} alt="displays avatar"></img>
+                       <Image src={MainImage} alt="displays avatar"></Image>
               </div>
     
                        </div>

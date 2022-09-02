@@ -47,7 +47,7 @@ function Chart() {
 
                     <div className=" flex justify-center gap-8 w-full mt-6">
       
-                   <img   src={image} alt="DataUSA Chart" />
+                   <Image src={image} alt="DataUSA Chart" />
                   </div>
                </div>
          </div>
