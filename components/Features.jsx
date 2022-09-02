@@ -62,35 +62,35 @@ const Features = () => {
                 </div>
             </div>
 
-          
 
-                   <div className=" my-4  ">
 
-                         <div className="flex items-center py-4">
-                           {/* <!-- The left line --> */}
-                           
-                          </div>
+            <div className=" my-4  ">
 
-                  <div className=" flex justify-center gap-8 w-full mt-6">
+                <div className="flex items-center py-4">
+                    {/* <!-- The left line --> */}
+
+                </div>
+
+                <div className=" flex justify-center gap-8 w-full mt-6">
                     {/* <!-- Product Tile Start --> */}
                     <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
-                   
-                   <Image src={MainImage} alt="an image that shows the weather"></Image>
-            
 
-           </div>
+                        <Image src={MainImage} alt="an image that shows the weather"></Image>
 
-              <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
-                            {imgURL && (<div className="flex h-64 rounded-lg shadow-lg hover:bg-gray-100 bg-white">
-                                <Image src={imgURL} width={50} height={50} alt="Generated Avatar" />
 
-                            </div>
-                            )}
+                    </div>
+
+                    <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
+                        {imgURL && (<div className="flex items-center justify-center shadow-sm relative w-16 h-16  bg-white rounded-full">
+                            <Image src={imgURL} width={50} height={50} alt="Generated Avatar" />
 
                         </div>
-        </div>
-</div>
-        </section > 
+                        )}
+
+                    </div>
+                </div>
+            </div>
+        </section >
     )
 }
 
