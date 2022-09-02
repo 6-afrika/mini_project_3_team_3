@@ -22,8 +22,6 @@ const Features = () => {
                     setImgURL(`https://avatars.dicebear.com/api/${filter}/${event.target.value}.svg`)
                     axios.get(url).then((response) => {
                         setWeather(response.data)
-                        console.log(response.data)
-
                     })
                     setSeed('')
                 }

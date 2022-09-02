@@ -69,7 +69,7 @@ const Navbar = () => {
 
                         </div>
                         <div className=' ml-[10px] border-b border-gray-300 my-4 '>
-                            <p className='w-[85%] md:w-[90%] py-4 ml-[10px] font-semibold'>Check out your city's weather here</p>
+                            <p className='w-[85%] md:w-[90%] py-4 ml-[10px] font-semibold'>Check out your city&apos;s weather here</p>
                         </div>
                     </div>
                     <div className='ml-[20px] py-4 flex flex-col'>
