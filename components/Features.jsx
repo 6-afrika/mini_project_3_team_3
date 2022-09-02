@@ -81,7 +81,7 @@ const Features = () => {
            </div>
 
               <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
-                            {imgURL && (<div className="flex h-64 rounded-lg shadow-lg hover:bg-gray-100 bg-white">
+                            {imgURL && (<div className="flex  h-64 rounded-lg shadow-lg hover:bg-gray-100 bg-white">
                                 <Image src={imgURL} width={50} height={50} alt="Generated Avatar" />
 
                             </div>
