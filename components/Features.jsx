@@ -1,7 +1,9 @@
 import React from 'react'
 import { useState } from 'react';
+import axios from "axios";
 import MainImage from '../public/assets/MainImage.png'
 import Image from 'next/image'
+import { data } from 'autoprefixer';
 
 
 const Features = () => {
@@ -9,16 +11,30 @@ const Features = () => {
     const [filter, setFilter] = useState(filters[0]);
     const [imgURL, setImgURL] = useState("");
     const [seed, setSeed] = useState("");
+    const url = `http://localhost:7000/current-weather/?city_name=${seed}`
+
+    const [weather, setWeather] = useState({})
 
     const handleInputChange = (event) => {
         setSeed(() => {
-            if (event.target.value.length > 0) {
-                setImgURL(
-                    `https://avatars.dicebear.com/api/${filter}/${event.target.value}.svg`
-                )
+            if (event.key === "Enter") {
+                if (event.target.value.length >= 0) {
+                    setImgURL(`https://avatars.dicebear.com/api/${filter}/${event.target.value}.svg`)
+                    fetch(url).then(res => res.json).then(result => {
+                        setWeather(result)
+                        setSeed('')
+                        console.log(result)
+                    })
+
+                }
+
+
             }
+
             return event.target.value;
         })
+
+
     }
 
     const handleFilterChange = (event) => {
@@ -46,8 +62,10 @@ const Features = () => {
                     <input
                         className="ml-20"
                         value={seed}
-                        onChange={handleInputChange}
+                        onChange={event => setSeed(event.target.value)}
                         placeholder="Enter your city here"
+                        onKeyPress={handleInputChange}
+                        type="text"
                     />
                 </div>
                 <div className='flex gap-2'>
@@ -76,6 +94,7 @@ const Features = () => {
                     <div className="w-80 h-64 rounded-lg hover:bg-gray-100 shadow-lg bg-white">
 
                         <Image src={MainImage} alt="an image that shows the weather"></Image>
+                        <p>{data.temp}jkll</p>
 
 
                     </div>
