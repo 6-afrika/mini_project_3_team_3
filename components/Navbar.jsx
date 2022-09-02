@@ -26,7 +26,7 @@ const Navbar = () => {
         setNav(prevValue => !prevValue)
     }
     return (
-        <nav className={shadow ? 'fixed w-full top-0 left-0  shadow-xl  z-[100] bg-[#395CB0]' : 'fixed w-full top-0 left-0 z-[100] bg-[#395CB0]'}>
+        <nav className={shadow ? 'fixed w-full top-0 left-0 shadow-xl  z-[100] bg-[#395CB0]' : 'fixed w-full top-0 left-0 z-[100] bg-[#395CB0]'}>
             <div className='flex justify-between items-center w-full h-full  px-2 2xl:px-16'>
                 <div className='font-bold ml-10 text-2xl gap-3 cursor-pointer flex items-center font-sans 
         text-white'>
@@ -69,7 +69,7 @@ const Navbar = () => {
 
                         </div>
                         <div className=' ml-[10px] border-b border-gray-300 my-4 '>
-                            <p className='w-[85%] md:w-[90%] py-4 ml-[10px] font-semibold'>Check out your city's weather here</p>
+                            <p className='w-[85%] md:w-[90%] py-4 ml-[10px] font-semibold'>Check out your city&apos;s weather here</p>
                         </div>
                     </div>
                     <div className='ml-[20px] py-4 flex flex-col'>
@@ -113,6 +113,6 @@ const Navbar = () => {
             </div>
         </nav>
     )
-}
+    }
 
 export default Navbar
