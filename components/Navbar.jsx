@@ -45,7 +45,7 @@ const Navbar = () => {
                             <li className='ml-10 text-sm uppercase hover:text-gray-400'>City Weather</li>
                         </Link>
                         <Link href='/#chart'>
-                            <li className='ml-10 text-sm uppercase hover:text-gray-400'>Hourly Weather</li>
+                            <li className='ml-10 text-sm uppercase hover:text-gray-400'>Weekly Weather</li>
                         </Link>
                         <Link href='/#footer'>
                             <li className='ml-10 text-sm uppercase hover:text-gray-400'>Contact</li>
@@ -81,7 +81,7 @@ const Navbar = () => {
                                 <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-gray-400'>City Weather</li>
                             </Link>
                             <Link href="/#chart">
-                                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-gray-400'>Hourly Weather</li>
+                                <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-gray-400'>Weekly Weather</li>
                             </Link>
                             <Link href="/#footer">
                                 <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-gray-400'>About</li>
@@ -113,6 +113,6 @@ const Navbar = () => {
             </div>
         </nav>
     )
-    }
+}
 
 export default Navbar
