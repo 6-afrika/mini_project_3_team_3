@@ -80,7 +80,7 @@ const Features = ({ setCityName, cityName, setWeatherChart, weatherChart }) => {
     const dates = [];
 
     const weatherData = await axios
-      .get(`http://localhost:7000/weather-forecast`, {
+      .get(`https://api.weather.6afrika.mbandevelopers.com/weather-forecast`, {
         params: { city_name: cityName },
       })
       .then((res) => res.data)
@@ -99,11 +99,11 @@ const Features = ({ setCityName, cityName, setWeatherChart, weatherChart }) => {
       )}&chan=1000,easeInCubic&chxt=x,y&chg=20,20&chxl=0:|${dates.join("|")}`
     );
 
-    await axios.get(`http://localhost:7000/city-details/?city_name=${cityName}`).then((response) => {
+    await axios.get(`https://api.weather.6afrika.mbandevelopers.com/city-details/?city_name=${cityName}`).then((response) => {
       setCityData(response.data)
     })
 
-    await axios.get(`http://localhost:7000/current-weather/?city_name=${cityName}`).then((response) => {
+    await axios.get(`https://api.weather.6afrika.mbandevelopers.com/current-weather/?city_name=${cityName}`).then((response) => {
       setCurrentWeather(response.data)
     })
 
