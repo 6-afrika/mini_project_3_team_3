@@ -12,7 +12,7 @@ const WeatherChart = () => {
     const dates = [];
 
     const weatherData = await axios
-      .get(`http://localhost:7000/weather-forecast`, {
+      .get(`https://api.weather.6afrika.mbandevelopers.com/weather-forecast`, {
         params: { city_name: cityName },
       })
       .then((res) => res.data)
