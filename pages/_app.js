@@ -20,8 +20,8 @@ function MyApp({ Component, pageProps }) {
       <Navbar />
       {/* <WeatherChart /> */}
       <Hero />
-      <Features setCityName={setCityName} cityName={cityName} setWeatherChart={setWeatherChart} weatherChart={weatherChart}/>
-      <Chart weatherChart={weatherChart}  />
+      <Features setCityName={setCityName} cityName={cityName} setWeatherChart={setWeatherChart} weatherChart={weatherChart} />
+      <Chart weatherChart={weatherChart} />
       <Footer />
       <Component {...pageProps} />
     </>
