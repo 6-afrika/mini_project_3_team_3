@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 function Chart({ weatherChart }) {
-  useEffect(()=>{
+  useEffect(() => {
     console.log(`CHART: ${weatherChart}`)
   }, [weatherChart])
 
@@ -13,7 +13,7 @@ function Chart({ weatherChart }) {
       <div className=" my-4  ">
         <div className="sm:w-3/4 lg:w-5/12 mx-auto px-2">
           <h1 id="chart" className="text-3xl text-center text-black">
-            Get Your Weather Forcast Here
+            View Your City's Weekly Forecast Here
           </h1>
           <p className="text-center text-gray-400 mt-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
